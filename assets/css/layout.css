@@ -1,0 +1,96 @@
+/* -----------------
+layout
+----------------- */
+
+/* row */
+
+.row
+{
+    clear: both;
+    overflow: hidden;
+}
+
+/* row-colors */
+
+.row--white {background: #fff}
+.row--blue {background: #f8f8f8}
+.row--grey {background: #3bb2d0}
+
+.row--grey-dark
+{
+    background: #282e37;
+    color: #fff;
+}
+
+.row--banner
+{
+    background: #aaa;
+}
+
+/* row-padding */
+
+.row--padding-medium
+{
+    padding-top: 2.1875em;
+    padding-bottom: 2.1875em;
+}
+
+.row--padding-wide
+{
+    padding-top: 2.1875em;
+    padding-bottom: 2.1875em;
+}
+
+/* container */
+
+.container-narrow,
+.container-medium,
+.container-wide
+{
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin: 0 auto;
+}
+
+.container-medium{
+    background: yellow;
+    max-width: 52em;
+}
+
+.container-wide{
+    background: blue;
+    max-width: 58em;
+}
+
+.container-narrow{
+    background: green;
+    max-width: 34em;
+}
+/* colums */
+
+/* -----------------
+wide
+------------------- */
+
+@media (min-width: 38em)
+{
+    .row--padding-medium
+    {
+        padding-top: 3.8889em;
+        padding-bottom: 3.8889em;
+    }
+    
+    .row--padding-wide
+    {
+        padding-top: 5.5556em;
+        padding-bottom: 5.5556em;
+    }
+    
+    .container-narrow,
+    .container-medium,
+    .container-wide
+    {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
