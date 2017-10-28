@@ -1,71 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html prefix="og: http://ogp.me/ns#" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Build Modern Website</title>
-    <meta name="description" content="" lang="id">
+    <!-- schema for markup google plus -->
+    <meta itemprop="name" content="Correlate - A smarter expense tracker">
+    <meta itemprop="description" content="correlate is an easy to use, smarter expense tracker">
+    <meta itemprop="image" content="http://correlate.com/correlate.png">
+
+    <!-- schema for markup twitter -->
+    <meta itemprop="twitter:card" content="summary_large_image">
+    <meta itemprop="twitter:title" content="correlate is an easy to use, smarter expense tracker">
+    <meta itemprop="twitter:creator" content="@author">
+    <meta itemprop="twitter:image:src" content="http://correlate.com/correlate.png">
+    <!-- schema for markup twitter -->
+    <meta property="og:title" content="correlate">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://correlate.com">
+    <meta property="og:image" content="http://correlate.com/correlate.png">
+    <meta property="og:description" content="correlate is an easy to use, smarter expense tracker">
+    <link rel="shorcut icon" href="favicon.ico">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/modules.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <title>Build Modern Website</title>
 </head>
 <body>
     <!-- banner -->
     <div class="row row--banner">
-        banner
-        <header class="row container-wide">
-            container wide
+        <header class="row container-wide header" role="banner">
+            <div class="header__logo">
+                <img src="assets/images/logo-correlate.png" alt="logo">
+            </div>
+            <nav class="header__nav" role="navigation">
+                <ul>
+                    <li class="header__nav-about"><a href="#">About</a></li>
+                    <li class="header__nav-contact current"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </header>
-        <section class="row container-medium">
-            container medium
+        <section class="row container-medium banner-content">
+            <h1 class="banner-content__heading">
+                A smarter expense tracker
+            </h1>
+            <a href="#"><img src="assets/images/icon-cta.png" alt="App store"></a>
         </section>
     </div>
 
     <!-- features -->
-    <div class="row row--white row--padding-wide">
-        features    
-        <section class="row container-medium">
-            container-medium
-        </section>
+    <div class="row row--white row--padding-wide features">
+        <div class="row container-medium">
+            <div class="row features__row">
+                <div class="col-narrow--right features__bike">
+                </div>
+                <div class="col-wide">
+                    <h2 class="features__heading">
+                        Easy to use money management
+                    </h2>
+                    <p class="features__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui illum hic asperiores adipisci consequatur quia eligendi totam odio animi ut, corporis quam sint ex assumenda deleniti! Laboriosam, animi iure. Quas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row features__row">
+                <div class="col-narrow features__phone">
+                </div>
+                <div class="col-wide--right">
+                    <h2 class="features__heading features__padding">
+                        Day to day breakdown
+                    </h2>
+                    <p class="features__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui illum hic asperiores adipisci consequatur quia eligendi totam odio animi ut, corporis quam sint ex assumenda deleniti! Laboriosam, animi iure. Quas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row features__row">
+                <div class="col-narrow--right features__safe">
+                </div>
+                <div class="col-wide">
+                    <h2 class="features__heading">
+                        Connect with securely with your bank
+                    </h2>
+                    <p class="features__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui illum hic asperiores adipisci consequatur quia eligendi totam odio animi ut, corporis quam sint ex assumenda deleniti! Laboriosam, animi iure. Quas.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- photos -->
     <div class="row">
-        photos    
+        <div class="col-medium">
+            <img src="assets/images/photo1.jpg" alt="Writing on notepaper">    
+        </div>
+        <div class="col-medium">
+            <img src="assets/images/photo2.jpg" alt="Someone a holding mobile devices showing a graph">
+        </div>
     </div>
 
     <!-- testimonial -->
-    <div class="row row--white row--padding-wide">
-        testimonial    
+    <div class="row row--white row--padding-wide testimonial">
         <section class="row container-narrow">
-            container-narrow
+            <h3 class="testimonial__heading">
+                What they are saying
+            </h3>
+            
+            <img src="assets/images/avatar.jpg" alt="Robert Johnson - Avatar">
+
+            <blockuote>
+                <p class="testimonial__quote">
+                    <em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quisquam, voluptates quasi,</em>
+                </p>
+                <p class="testimonial__source">
+                    Robert Johnson
+                </p>
+            </blockuote>
         </section>
     </div>
 
     <!-- facts -->
-    <div class="row row--grey row--padding-wide">
-        facts   
-        <section class="row container-narrow">
-            container-narrow
-        </section> 
+    <div class="row row--grey row--padding-wide fact">
+        <section class="row container-narrow fact-intro">
+            <h3 class="fact-intro__heading">
+                A few Fact
+            </h3>
+            <p class="fact-intro__text">
+                Lorem ipsum, dolor sit amet consectetur
+            </p>
+        </section>
+        
+        <div class="row container-medium fact-list">
+            <div class="col-narrow">
+                <span class="fact-list__icons fact-list__id"></span>
+                <h4 class="fact-list__heading">2.000.000</h4>
+                <p class="fact-list__text">Lorem Ipsum</p>
+            </div>
+            <div class="col-narrow">
+                <span class="fact-list__icons fact-list__eye"></span>
+                <h4 class="fact-list__heading">11.000.000</h4>
+                <p class="fact-list__text">Lorem Ipsum</p>
+            </div>
+            <div class="col-narrow">
+                <span class="fact-list__icons fact-list__timer"></span>
+                <h4 class="fact-list__heading">5 minutes</h4>
+                <p class="fact-list__text">Lorem Ipsum</p>
+            </div>
+            <div class="col-narrow">
+                <span class="fact-list__icons fact-list__chart"></span>
+                <h4 class="fact-list__heading">40%</h4>
+                <p class="fact-list__text">Lorem Ipsum</p>
+            </div>
+        </div>
     </div>
 
     <!-- press -->
-    <div class="row row--blue row--padding-medium">
-        press
+    <div class="row row--blue row--padding-medium press">
         <section class="row container-wide">
-            container-wide
+            <h3 class="press__heading">
+                Recent Press
+            </h3>
+            <div class="row">
+                <div class="press__logos press__logos-solvable">
+                    <a href="#"><img src="assets/images/logo-solveable.png" alt="Solvable"></a>
+                </div>
+                <div class="press__logos press__logos-nc">
+                    <a href="#"><img src="assets/images/logo-nc.png" alt="NC"></a>
+                </div>
+                <div class="press__logos press__logos-waratah">
+                    <a href="#"><img src="assets/images/logo-waratah.png" alt="The waratah Post"></a>
+                </div>
+                <div class="press__logos press__logos-bevel">
+                    <a href="#"><img src="assets/images/logo-bevel.png" alt="Bevel"></a>
+                </div>
+            </div>
         </section>
     </div>
 
     <!-- footer -->
-    <div class="row row--grey-dark row--padding-medium">
-        footer    
-        <section class="row container-wide">
-            container-wide
-        </section>
+    <div class="row row--dark-grey row--padding-medium footer">
+        <footer class="row container-wide" role="content-info">
+            <div class="col-wide footer__info">
+                <div class="footer__logo">
+                    <img src="assets/images/logo-correlate.png" alt="Correlate logo">
+                </div>
+
+                <div class="row">
+                    <div class="col-medium">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-medium">
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Google+</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row footer__copyright">
+                    <ul>
+                        <li>&copy; 2017 Correlate INC</li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-narrow--right footer__cta">
+                <img src="assets/images/icon-cta.png" alt="Appstore icon">
+            </div>
+        </footer>
     </div>
 </body>
 </html>

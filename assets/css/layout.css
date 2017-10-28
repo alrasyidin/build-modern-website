@@ -1,6 +1,6 @@
-/* -----------------
+/****************
 layout
------------------ */
+****************/
 
 /* row */
 
@@ -10,87 +10,86 @@ layout
     overflow: hidden;
 }
 
-/* row-colors */
+/* row color */
 
-.row--white {background: #fff}
-.row--blue {background: #f8f8f8}
-.row--grey {background: #3bb2d0}
+.row--white{background-color: #fff}
+.row--blue{background-color: #3bb2d0}
+.row--grey{background-color: #f8f8f8}
 
-.row--grey-dark
-{
-    background: #282e37;
+.row--dark-grey{
+    background-color: #282e37;
     color: #fff;
 }
 
-.row--banner
-{
-    background: #aaa;
-}
 
-/* row-padding */
-
+/* row padding */
 .row--padding-medium
 {
-    padding-top: 2.1875em;
-    padding-bottom: 2.1875em;
+    padding: 2.1875em 0;
 }
 
 .row--padding-wide
 {
-    padding-top: 2.1875em;
-    padding-bottom: 2.1875em;
+    padding: 2.1875em 0;
 }
 
 /* container */
 
-.container-narrow,
+.container-wide,
 .container-medium,
-.container-wide
+.container-narrow
 {
-    padding-left: 1.5em;
-    padding-right: 1.5em;
     margin: 0 auto;
+    padding: 0 1.5em;
 }
 
-.container-medium{
-    background: yellow;
-    max-width: 52em;
-}
+.container-narrow{max-width: 34em;}
+.container-medium{max-width: 52em;}
+.container-wide{max-width: 58em;}
 
-.container-wide{
-    background: blue;
-    max-width: 58em;
-}
+/* columns */
 
-.container-narrow{
-    background: green;
-    max-width: 34em;
-}
-/* colums */
+.col-narrow,
+.col-narrow--right{margin-bottom: 1.5em}
 
-/* -----------------
+/****************
 wide
-------------------- */
+****************/
 
-@media (min-width: 38em)
-{
+@media (min-width: 38em){
     .row--padding-medium
     {
-        padding-top: 3.8889em;
-        padding-bottom: 3.8889em;
+        padding: 3.8889em 0;
     }
     
     .row--padding-wide
     {
-        padding-top: 5.5556em;
-        padding-bottom: 5.5556em;
+        padding: 5.5556em 0;
     }
-    
-    .container-narrow,
+
+    .container-wide,
     .container-medium,
-    .container-wide
+    .container-narrow
     {
-        padding-left: 2em;
-        padding-right: 2em;
+        padding: 0 2em;
+    }
+
+    .col-narrow,
+    .col-medium,
+    .col-wide{float: left}
+
+    .col-narrow--right,
+    .col-wide--right{float: right}
+
+    .col-wide,
+    .col-wide--right{width: 61%}
+    
+    .col-medium{width: 50%}
+
+    .col-narrow--right,
+    .col-narrow
+    {
+        width: 25%;
+        margin-bottom: 0;
     }
 }
