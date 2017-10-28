@@ -1,4 +1,4 @@
-#Build beautiful Website
+# Build beautiful Website
 
 This is one my exercise. i will use Methodology BEM (Block Element and Modifier).This is single page website. i create with html, css and little javascript
 
